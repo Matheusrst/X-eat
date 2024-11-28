@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('/images/fruits.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+header {
+    position: fixed; /* Fixa o header no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura total */
+    height: 80px; /* Altura da faixa verde */
+    z-index: 10; /* Garante que fique acima dos outros elementos */
+    background-color: #4ea697; /* Cor da faixa verde */
+    display: flex; /* Centraliza o card "Bem Vindo" */
+    justify-content: center;
+    align-items: center;
+}
+
+.green-bar {
+    position: absolute;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 80px; /* Altura da faixa verde */
+    background-color: #4ea697; /* Cor verde */
+    z-index: -1; /* Fica atrás do card "Bem Vindo" */
+}
+
+.welcome-card {
+    position: relative;
+    background: #134E5E;
+    padding: 15px 30px;
+    border-radius: 30px 7px 30px 7px; /* Canto superior esquerdo, superior direito, inferior direito, inferior esquerdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 300px;
+    z-index: 15;
+}
+
+
+.welcome-card h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right, #348F50, #56B4D3); /* Gradiente aplicado */
+    -webkit-background-clip: text; /* Faz o texto usar o gradiente */
+    -webkit-text-fill-color: transparent; /* Torna o fundo do texto transparente */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    margin-top: 100px; /* Espaço para compensar o header fixo */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80rem;
+    background: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+}
+
+
+
+.novo-login, .fazer-login {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.criar-conta {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    border-radius: 15px;
+}
+
+.entrar {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.divider {
+    width: 2px;
+    background: #aaa;
+    margin: 0 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-login .icon {
+    background: #ddd;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.recuperar-senha {
+    text-decoration: none;
+    color: #007BFF;
+}
