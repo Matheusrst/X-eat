@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f4; /* Fundo para contraste */
+    position: relative; /* Define um contexto para posicionamento absoluto */
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Posiciona a logo no canto esquerdo */
+    padding: 10px 0; /* Ajuste do padding para não afetar o alinhamento */
+    background: linear-gradient(90deg, #348F50, #56B4D3);
+    height: 80px; /* Define uma altura fixa */
+}
+
+.logo {
+    flex: 0; /* Impede que a logo ocupe mais espaço que o necessário */
+    margin-left: 0; /* Remove qualquer margem à esquerda */
+    margin-right: 0; /* Remove qualquer margem à direita */
+}
+
+.logo img {
+    max-height: 84px; /* Garante que a imagem respeite a altura do header */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #fff;
+}
+
+.actions .login {
+    background: #56B4D3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.actions .register {
+    background: white;
+    border: 2px solid #56B4D3;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #56B4D3;
+    cursor: pointer;
+}
+
+/* Conteúdo principal */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.text-section {
+    max-width: 60%; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o conteúdo do texto */
+    padding: 20px;
+}
+
+.text-section h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.text-section strong {
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.image-section {
+    margin-top: 2.5rem; /* Espaço entre o texto e a imagem */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+}
+
+.image-section img {
+    width: 25rem; /* Define o tamanho da imagem */
+    border-radius: 20px; /* Borda arredondada */
+    margin-right: 4rem;
+}
+
+/* Categorias */
+.categories {
+    position: absolute;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #348F50, #56B4D3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    text-align: center;
+    color: white;
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.category i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.category.selected {
+    background: white;
+    color: #56B4D3;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.category:hover {
+    background: rgba(255, 255, 255, 0.2); /* Efeito ao passar o mouse */
+}
+
+.category.selected {
+    background-color: #56B4D3;
+    color: white;
+    font-weight: bold;
+}
