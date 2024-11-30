@@ -24,3 +24,11 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/home-users', function () {
+    return view('home-users');
+});
+
+Route::get('/home-reserva', function () {
+    return view('home-usersReserva');
+});
