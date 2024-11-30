@@ -87,7 +87,7 @@ header .profile-section {
 }
 
 header .profile-section i {
-    font-size: 24px;
+    font-size: 32px;  /* Aumentei o tamanho do ícone */
     color: #fff;
     cursor: pointer;
     transition: color 0.3s ease;

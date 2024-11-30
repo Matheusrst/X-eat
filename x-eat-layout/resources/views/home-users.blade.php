@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="profile">
-                    <i class="fas fa-user-circle"></i>
+                    <img src="/images/profile.jpg" alt="profile">
                 </div>
             </header>
 

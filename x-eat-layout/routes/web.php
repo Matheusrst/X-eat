@@ -29,6 +29,10 @@ Route::get('/home-users', function () {
     return view('home-users');
 });
 
+Route::get('/cadastro-paciente', function () {
+    return view('cadastrar-paciente');
+});
+
 Route::get('/home-reserva', function () {
     return view('home-usersReserva');
 });
