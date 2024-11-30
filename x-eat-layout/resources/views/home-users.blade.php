@@ -162,46 +162,46 @@
     </div>
 
     <script>
-        window.onload = function() {
-            const protein = 30; // Exemplo de 30% de proteínas
-            const fats = 24; // Exemplo de 24% de gorduras
-            const carbs = 46; // Exemplo de 46% de carboidratos
+    window.onload = function() {
+        // Atualizando as barras de macronutrientes
+        const protein = 30; // Exemplo de 30% de proteínas
+        const fats = 24; // Exemplo de 24% de gorduras
+        const carbs = 46; // Exemplo de 46% de carboidratos
 
-            // Atualizar as larguras das barras de progresso
-            document.querySelector('.proteins').style.width = protein + '%';
-            document.querySelector('.fats').style.width = fats + '%';
-            document.querySelector('.carbs').style.width = carbs + '%';
+        // Atualizar as larguras das barras de progresso
+        document.querySelector('.proteins').style.width = protein + '%';
+        document.querySelector('.fats').style.width = fats + '%';
+        document.querySelector('.carbs').style.width = carbs + '%';
 
-            // Atualizar os gráficos de pizza
-            document.getElementById('chart1').style.background = `conic-gradient(#3AC07A 0% ${protein}%, #F5F5F5 ${protein}% 100%)`;
-            document.getElementById('chart2').style.background = `conic-gradient(#FF6347 0% ${fats}%, #F5F5F5 ${fats}% 100%)`;
-            document.getElementById('chart3').style.background = `conic-gradient(#FFCC00 0% ${carbs}%, #F5F5F5 ${carbs}% 100%)`;
+        // Atualizar os gráficos de pizza
+        document.getElementById('chart1').style.background = `conic-gradient(#3AC07A 0% ${protein}%, #F5F5F5 ${protein}% 100%)`;
+        document.getElementById('chart2').style.background = `conic-gradient(#FF6347 0% ${fats}%, #F5F5F5 ${fats}% 100%)`;
+        document.getElementById('chart3').style.background = `conic-gradient(#FFCC00 0% ${carbs}%, #F5F5F5 ${carbs}% 100%)`;
 
-            // Atualizar as porcentagens visíveis dentro dos gráficos
-            document.getElementById('percent1').textContent = `${protein}%`;
-            document.getElementById('percent2').textContent = `${fats}%`;
-            document.getElementById('percent3').textContent = `${carbs}%`;
-        }
+        // Atualizar as porcentagens visíveis dentro dos gráficos
+        document.getElementById('percent1').textContent = `${protein}%`;
+        document.getElementById('percent2').textContent = `${fats}%`;
+        document.getElementById('percent3').textContent = `${carbs}%`;
 
-        window.onload = function () {
-            const dailyWaterConsumption = {
-                monday: 200,
-                tuesday: 400,
-                wednesday: 500,
-                thursday: 300,
-                friday: 600,
-                saturday: 500,
-                sunday: 450
-            };
-
-            const maxDailyConsumption = 1000; // Meta diária
-            Object.keys(dailyWaterConsumption).forEach(day => {
-                const bar = document.getElementById(day);
-                const dailyPercentage = (dailyWaterConsumption[day] / maxDailyConsumption) * 100;
-                bar.style.height = dailyPercentage + '%';
-            });
+        // Atualizando o gráfico de consumo de água
+        const dailyWaterConsumption = {
+            monday: 200,
+            tuesday: 400,
+            wednesday: 500,
+            thursday: 300,
+            friday: 600,
+            saturday: 500,
+            sunday: 450
         };
 
-    </script>
+        const maxDailyConsumption = 1000; // Meta diária
+        Object.keys(dailyWaterConsumption).forEach(day => {
+            const bar = document.getElementById(day);
+            const dailyPercentage = (dailyWaterConsumption[day] / maxDailyConsumption) * 100;
+            bar.style.height = dailyPercentage + '%';
+        });
+    };
+</script>
+
 </body>
 </html>
