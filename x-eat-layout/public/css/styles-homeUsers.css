@@ -63,44 +63,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;  /* Ajustei o padding para melhorar o espaçamento */
-    background: linear-gradient(90deg, #348F50, #56B4D3); /* Mantive o gradiente */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Adicionei sombra sutil para destacar */
-    border-radius: 10px;  /* Borda arredondada */
+    margin-bottom: 20px;
 }
 
-header .logo {
+.header-cards {
     display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    width: 120px;
-    height: auto;
-    object-fit: contain;
-}
-
-header .profile-section {
-    display: flex;
-    align-items: center;
     gap: 20px;
 }
 
-header .profile-section i {
-    font-size: 32px;  /* Aumentei o tamanho do ícone */
-    color: #fff;
+.header-cards .card {
+    background: linear-gradient(90deg, #1D976C, #93F9B9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
-header .profile-section i:hover {
-    color: #FF6B6B;  /* Cor para o hover do ícone */
-}
-
-header .profile-section .username {
-    font-size: 18px;
-    color: #fff;
-    font-weight: bold;
+.header-cards .card:hover {
+    background-color: #2A7E5C;
 }
 
 /* Adicionando estilo para o card */
@@ -129,14 +112,14 @@ header .profile-section .username {
 
 .card i {
     font-size: 24px;
-    color: #3AC07A;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .card span {
     font-size: 16px;
     font-weight: bold;
-    color: #4D4D4D;
+    color: #FFFFFF;
 }
 
 /* Seção de perfil */

@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #2A7E5C;
+    width: 240px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+    background-color: #1E5A44;
+}
+
+.sidebar .actions .button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: #3AC07A;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.sidebar .actions .button:hover {
+    background-color: #2A7E5C;
+}
+
+main {
+    flex: 1;
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.header-cards .card {
+    background: linear-gradient(90deg, #1D976C, #93F9B9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header-cards .card:hover {
+    background-color: #2A7E5C;
+}
+
+.profile i {
+    font-size: 40px;
+    color: #2A7E5C;
+}
+
+.charts {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    margin-bottom: 20px;
+}

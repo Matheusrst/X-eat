@@ -33,6 +33,10 @@ Route::get('/cadastro-paciente', function () {
     return view('cadastrar-paciente');
 });
 
+Route::get('/home-nutri', function () {
+    return view('home-nutri');
+});
+
 Route::get('/home-reserva', function () {
     return view('home-usersReserva');
 });

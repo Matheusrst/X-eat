@@ -30,7 +30,7 @@
         <main>
             <!-- Header -->
             <header>
-                <div class="card-section">
+                <div class="header-cards">
                     <div class="card">
                         <i class="fas fa-calendar-alt"></i>
                         <span>Cardápio</span>
