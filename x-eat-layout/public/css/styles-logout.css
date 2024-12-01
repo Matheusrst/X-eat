@@ -1,0 +1,199 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do header */
+header {
+    background: linear-gradient(45deg, #1D976C, #93F9B9);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.card-section {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.profile {
+    cursor: pointer;
+}
+
+.profile i {
+    font-size: 30px;
+    color: white;
+}
+
+/* Estilos para o Login */
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.novo-login,
+.fazer-login {
+    width: 48%;
+}
+
+.novo-login h2,
+.fazer-login h2 {
+    font-size: 20px;
+    color: #1D976C;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box input:focus {
+    border-color: #1D976C;
+    outline: none;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1D976C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #93F9B9;
+}
+
+/* Estilos para a página de perfil */
+.profile-info {
+    margin-top: 30px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.logout {
+    margin-top: 20px;
+}
+
+.logout .btn.sair {
+    background-color: #ff4d4d;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.logout .btn.sair:hover {
+    background-color: #ff1a1a;
+}
+
+/* Estilos para redes sociais e outras partes */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #1D976C;
+}
+
+.divider {
+    margin: 20px 0;
+    border-left: 1px solid #ddd;
+    height: 60px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recuperar-senha {
+    color: #1D976C;
+    text-decoration: none;
+}
+
+.recuperar-senha:hover {
+    text-decoration: underline;
+}

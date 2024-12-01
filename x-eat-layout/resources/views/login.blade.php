@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para o aviso de erro */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -34,12 +43,12 @@
                 <div class="divider"></div>
                 <div class="fazer-login">
                     <h2>FAÇA LOGIN</h2>
-                    <form>
+                    <form id="loginForm">
                         <div class="input-box">
-                            <input type="text" placeholder="USUÁRIO">
+                            <input type="text" id="username" placeholder="USUÁRIO" required>
                         </div>
                         <div class="input-box">
-                            <input type="password" id="senha" placeholder="SENHA">
+                            <input type="password" id="senha" placeholder="SENHA" required>
                             <!-- Ícone de olho para mostrar/ocultar senha -->
                             <span class="eye-icon" onclick="togglePassword()">
                                 <i class="fas fa-eye" id="eye-icon"></i>
@@ -51,14 +60,16 @@
                             </label>
                             <a href="#" class="recuperar-senha">Recuperar senha</a>
                         </div>
-                        <button class="btn entrar">Entrar</button>
-                        <div class="social-login">
-                            <!-- Ícones de redes sociais -->
-                            <span class="icon"><i class="fab fa-google"></i></span>
-                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
-                            <span class="icon"><i class="fas fa-envelope"></i></span> <!-- Ícone de email -->
-                        </div>
+                        <button type="button" class="btn entrar" onclick="handleLogin()">Entrar</button>
+                        <!-- Mensagem de erro -->
+                        <div id="errorMessage" class="error-message" style="display: none;"></div>
                     </form>
+                    <div class="social-login">
+                        <!-- Ícones de redes sociais -->
+                        <span class="icon"><i class="fab fa-google"></i></span>
+                        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                        <span class="icon"><i class="fas fa-envelope"></i></span> <!-- Ícone de email -->
+                    </div>
                 </div>
             </div>
         </main>
@@ -79,6 +90,34 @@
                 senha.type = "password";  // Oculta o texto novamente
                 eyeIcon.classList.remove("fa-eye-slash");  // Remove o ícone de olho aberto
                 eyeIcon.classList.add("fa-eye");  // Adiciona o ícone de olho fechado
+            }
+        }
+
+        function handleLogin() {
+            // Obter os valores de usuário e senha
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('senha').value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+
+            // Usuários e senhas específicos
+            const nutriUser = "nutricionista";
+            const nutriPassword = "12345";
+            const regularUser = "usuario";
+            const regularPassword = "senha123";
+
+            // Redefine a mensagem de erro
+            errorMessage.style.display = "none";
+
+            if (username === nutriUser && password === nutriPassword) {
+                // Redireciona para a página do nutricionista
+                window.location.href = "/home-nutri";
+            } else if (username === regularUser && password === regularPassword) {
+                // Redireciona para a página do usuário regular
+                window.location.href = "/home-users";
+            } else {
+                // Exibe uma mensagem de erro caso as credenciais estejam incorretas
+                errorMessage.textContent = "Usuário ou senha incorretos! Tente novamente.";
+                errorMessage.style.display = "block";
             }
         }
     </script>

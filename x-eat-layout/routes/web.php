@@ -18,11 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/', function () {
-    return view('login');
+    return view('home');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/home-users', function () {
@@ -35,6 +35,14 @@ Route::get('/cadastro-paciente', function () {
 
 Route::get('/home-nutri', function () {
     return view('home-nutri');
+});
+
+Route::get('/user-profile', function () {
+    return view('user-profile');
+});
+
+Route::get('/nutri-profile', function () {
+    return view('nutri-profile');
 });
 
 Route::get('/home-reserva', function () {

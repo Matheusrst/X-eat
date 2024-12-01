@@ -22,10 +22,10 @@
                 <a href="#">Registros</a>
             </nav>
             <div class="actions">
-                <a href="/" class="login">
+                <a href="/login" class="login">
                     Login
                 </a>
-                <a href="/" class="register">
+                <a href="/login" class="register">
                     Cadastrar-se
                 </a>
             </div>

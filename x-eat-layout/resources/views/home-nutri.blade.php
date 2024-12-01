@@ -28,7 +28,7 @@
             </nav>
             <div class="actions">
                 <a href="#" class="button">Agendar consulta</a>
-                <a href="#" class="button">Cadastrar paciente</a>
+                <a href="/cadastro-paciente" class="button">Cadastrar paciente</a>
             </div>
         </aside>
 
@@ -54,7 +54,7 @@
                         <span>Minhas Metas</span>
                     </div>
                 </div>
-                <div class="profile">
+                <div class="profile" onclick="redirectToProfilePage()">
                     <i class="fas fa-user-circle"></i>
                 </div>
             </header>
@@ -75,6 +75,10 @@
 
     <!-- Scripts -->
     <script>
+        function redirectToProfilePage() {
+        // Redireciona para a página de perfil do usuário
+        window.location.href = "/nutri-profile"; // Aqui você deve colocar a URL do perfil do usuário
+    }
         const ctx1 = document.getElementById('patientsChart').getContext('2d');
         const patientsChart = new Chart(ctx1, {
             type: 'line',

@@ -48,7 +48,7 @@
                         <span>Minhas Metas</span>
                     </div>
                 </div>
-                <div class="profile">
+                <div class="profile" onclick="redirectToProfilePage()">
                     <img src="/images/profile.jpg" alt="profile">
                 </div>
             </header>
@@ -162,6 +162,11 @@
     </div>
 
     <script>
+        function redirectToProfilePage() {
+        // Redireciona para a página de perfil do usuário
+        window.location.href = "/user-profile"; // Aqui você deve colocar a URL do perfil do usuário
+    }
+
     window.onload = function() {
         // Atualizando as barras de macronutrientes
         const protein = 30; // Exemplo de 30% de proteínas
