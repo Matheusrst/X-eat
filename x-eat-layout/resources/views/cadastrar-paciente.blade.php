@@ -16,7 +16,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/home-nutri"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#"><i class="fas fa-utensils"></i> Alimentos</a></li>
                     <li><a href="#"><i class="fas fa-concierge-bell"></i> Refeições</a></li>
                     <li><a href="#"><i class="fas fa-chart-line"></i> Acompanhamento</a></li>

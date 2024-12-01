@@ -20,7 +20,7 @@
             <div class="profile-box">
                 <div class="profile-info">
                     <div class="profile-img">
-                        <img src="/images/nutritionist-profile.jpg" alt="Nutricionista">
+                        <img src="/images/profile.jpg" alt="Nutricionista">
                     </div>
                     <div class="profile-details">
                         <h2>Dr. João Silva</h2>
