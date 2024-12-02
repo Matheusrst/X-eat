@@ -1,4 +1,3 @@
-```markdown
 # X-Eat
 
 Este projeto foi iniciado no 3°semestre de ADS na faculdade de tecnologia Fatec Ourinhos e foi tomada a continuidade dele nos semestres posteriores. X-Eat é uma aplicação para gerenciar refeições, acompanhar macronutrientes e criar planos alimentares personalizados. O sistema combina ferramentas de acompanhamento nutricional e organização diária de refeições.
