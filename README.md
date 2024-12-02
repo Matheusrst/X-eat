@@ -102,4 +102,3 @@ Este projeto foi iniciado no 3°semestre de ADS na faculdade de tecnologia Fatec
 ## 📜 Licença
 
 Este projeto está licenciado sob a licença MIT.
-```
